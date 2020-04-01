@@ -4,18 +4,10 @@ import { WebView } from 'react-native-webview';
 import { globalStyles, images } from '../styles/Global'
 import Card from '../shared/Card'
 import { v4 as uuidv4 } from 'uuid'
-import HighchartsReactNative from '@highcharts/highcharts-react-native'
 
 export default function Room({ navigation }) {
     const rating = navigation.getParam('rating')
     const [readings, setReadings] = useState([])
-    const [chartOptions, setChartOptions] = useState({
-        chartOptions: {
-            series: [{
-                data: [1, 2, 3]
-            }]
-        }
-    })
 
     useEffect(() => {
         async function getRoomSensorReadings(){
@@ -63,9 +55,6 @@ export default function Room({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         marginBottom: 20
-    },
-    chart: {
-        
     },
     rating: {
         flexDirection: 'column',
