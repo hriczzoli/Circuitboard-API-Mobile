@@ -1,2 +1,1 @@
-# Second ReactNative-Expo project
-Keep exploring the platform with this simple 'Game Review Application'
+# React-Native-Expo Application for reading data from circuitboard-API(Node.js-Express)
