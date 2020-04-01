@@ -1,0 +1,22 @@
+{
+  "name": "circuitboardapi",
+  "version": "1.0.0",
+  "description": "API for getting circuit board readings data from AWS S3 bucket",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js localhost 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoltan Hricz",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.648.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": "10.16.2"
+  }
+}
